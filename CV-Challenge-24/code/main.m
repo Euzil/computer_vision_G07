@@ -2,4 +2,5 @@
 %
 %
 %
+clc;
 app = main_App;

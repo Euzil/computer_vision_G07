@@ -5,9 +5,24 @@ f = figure('Color','w');
     [height2, width2, ~] = size(img_bottom);
     [height3, width3, ~] = size(img_left);
     [height_t, width_t, ~] = size(img_target);
+
+    % 调整比例因子以增加图像尺寸
+    % scale_factor = 1; 
+    % 
+    % height = height * scale_factor;
+    % width = width * scale_factor;
+    % height2 = height2 * scale_factor;
+    % width2 = width2 * scale_factor;
+    % height3 = height3 * scale_factor;
+    % width3 = width3 * scale_factor;
+    % height_t = height_t * scale_factor;
+    % width_t = width_t * scale_factor;
+
+
     pos = [0,0,0];
     angle = [10,20];
-    set (gcf,'WindowKeyPressFcn',@KeyDown);
+    
+    % set (gcf,'WindowKeyPressFcn',@KeyDown);
     set (gcf, 'WindowScrollWheelFcn', @ScrollWheel);
     %Pnl = uipanel(gcf, 'Position', [0 0.13 1 0.8]);
     %Axes =axes (Pnl,'Position',[0.1, 0.1,0.8,0.8]);
@@ -41,15 +56,18 @@ f = figure('Color','w');
     [X, Z] = meshgrid(-(width-1)/2 : (width-1)/2,  (height-1)/2 : -1 : -(height-1)/2);
     Y = zeros(height, width);
     f5 = warp(X, Y, Z, img_front); hold off
+
+
     axis(Axes,'equal')
     grid(Axes,'on')
     xlabel('x');
     ylabel('y');
     zlabel('z');
     update(Axes,pos)
+
     ax = gca;              
     ax.Clipping = 'off'; 
-    axis off
+    % axis off
     cameratoolbar(f);
 
 % function KeyDown(~, event)
@@ -109,6 +127,7 @@ f = figure('Color','w');
         range = max(1,range+value);
         update()
     end
+
     %%update
     function update(~,~)
         axis(Axes,[-range+pos(1) , range+pos(1), -range+pos(2) , range+pos(2), -range+pos(3) , range+pos(3)])
