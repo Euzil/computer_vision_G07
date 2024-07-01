@@ -9,11 +9,11 @@ Goal:
 Create different views of a scene from a single image (rebuild 2-dimensions image into 3-dimensions).
 
 Applicable version: 
-Matlab 2020a Toolbox Installation: Image Processing Toolbox
+Matlab 2024a Toolbox Installation: Image Processing Toolbox
 
 Anweisungen zur Benutzung
 Um die 3-dimensionale Rekonstruktion zu vervollständigen:
-"Ein Bild auswählen": Wählen Sie ein Bild für die Rekonstruktion. Das Programm akzeptiert nur Dateien im ".jpg"- oder ".png"-Format.
+"Ein Bild auswählen": Wählen Sie ein Bild für die Rekonstruktion. Das Programm akzeptiert nur Dateien im ".jpg"-, ".png"-oder ".jpeg"- Format.
 "4 Eckpunkte udn 1 Fluchtpunkt definieren": Sie sollten einen Fluchtpunkt und vier Eckpunkte zum Einrahmen einer Ebene fur eine Homographie definieren. Sie können maximal 5 Punkte auswählen.
 "Reset": Setzt alle von Ihnen gewählten Punkte und den Vordergrund zurück.
 "START": Wenn Sie schon Bild auswählen und Punkte(4 Eckpunkte udn 1 Fluchtpunkt) richtig definieren, können Sie die Rekonstruktion starten.
