@@ -6,9 +6,12 @@ Gruppe 07
 Tour into the Picture
 
 Das Ziel: 
+
 Erstellen verschiedener Ansichten einer Szene aus einem einzigen Bild (Umwandlung eines zweidimensionalen Bildes in ein dreidimensionales).
 
+
 Anwendbare Version: 
+
 Matlab 2023b Toolbox-Installation: Image Processing Toolbox
 
 Anweisungen zur Benutzung:
