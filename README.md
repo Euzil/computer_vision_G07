@@ -20,7 +20,7 @@ Um die 3-dimensionale Rekonstruktion zu vervollständigen:
 
 "4 Eckpunkte udn 1 Fluchtpunkt definieren": Sie sollten einen Fluchtpunkt und vier Eckpunkte zum Einrahmen einer Ebene fur eine Homographie definieren. Sie können maximal 5 Punkte auswählen.
 
-"Reset": Setzt alle von Ihnen gewählten Punkte und den Vordergrund zurück.
+"Reset": Setzt alle von Ihnen gewählten Punkte zurück.
 
 "START": Wenn Sie schon Bild auswählen und Punkte(4 Eckpunkte udn 1 Fluchtpunkt) richtig definieren, können Sie die Rekonstruktion starten.
 
