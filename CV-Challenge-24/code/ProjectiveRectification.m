@@ -53,6 +53,7 @@ function [img_front_rectified, img_left_rectified, img_right_rectified,...
     trf_right = fitgeotrans(quad_right, fixed_points_horizontal, 'projective');
     trf_top = fitgeotrans(quad_top, fixed_points_vertical, 'projective');
     trf_bottom = fitgeotrans(quad_bottom, fixed_points_vertical, 'projective');
+    
 % Apply Transformations and Adjust Orientation
  %  imwarp applies the projective transformation to each image.  
  %  imref2d sets the output view for the transformed images based on the calculated dimensions. 
