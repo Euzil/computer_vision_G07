@@ -17,7 +17,6 @@ f = figure('Color','w');
     [height3, width3, ~] = size(img_left);
     [height_t, width_t, ~] = size(img_target);
 
-    % 调整比例因子以增加图像尺寸
     % scale_factor = 1; 
     % 
     % height = height * scale_factor;
